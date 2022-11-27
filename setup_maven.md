@@ -1,6 +1,6 @@
 Prerequisites:
 - AWS Acccount.
-- Create Redhat EC2 T2.micro Instnace with 1GB of RAM.
+- Create Redhat EC2 T2.medium Instance with 4GB of RAM.
 - Install java openJDK 1.8+
 
 # install Java JDK 1.8+ as a pre-requisit for maven to run.
