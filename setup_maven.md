@@ -1,15 +1,19 @@
-#  Install & configure Maven build tool on Jenkins
-Maven is a code build tool which used to convert your code to artifact. this is widely used plugin to build in continuous integration
+Prerequisites:
+AWS Acccount.
+Create Redhat EC2 T2.micro Instnace with 1GB of RAM.
+Install java openJDK 1.8+
 
-#### Follow this artical in **[YouTube](https://www.youtube.com/watch?v=wgfsVmHnAiM)**
+# install Java JDK 1.8+ as a pre-requisit for maven to run.
 
-#### Prerequisites
-1. Jenkins server **[Get Help Here](https://www.youtube.com/watch?v=M32O4Yv0ANc)
-
-#### Install Maven on Jenkins
+sudo hostname maven
+cd /opt
+sudo yum install wget nano tree unzip git-all -y
+sudo yum install java-11-openjdk-devel java-1.8* -y
+java -version
+git --version
+#### Install Maven on your server
 Download maven packages https://maven.apache.org/download.cgi onto Jenkins server. In this case I am using /opt/maven as my installation directory
 	- Link : https://maven.apache.org/download.cgi
-```sh
   # Creating maven directory under /opt
   mkdir /opt/maven
   cd /opt/maven
@@ -31,22 +35,3 @@ Check maven version
 ```sh
   mvn –version
 ```
-So far you have completed installation of maven software to support maven plugin on jenkins console. Let's jump onto jenkins to complete remining steps. 
-
-#### Setup maven on jenkins console
-- Install maven plugin without restart  
-  - `Manage Jenkins` > `Jenkins Plugins` > `available` > `Maven Invoker`
-  
-#### (Update) Install "Maven Integration" Plugin as well
-- Install maven Integration Plugin without restart 
-  - `Manage Jenkins` > `Jenkins Plugins` > `available` > `Maven Integration`
-  
-- Configure java path
-  - `Manage Jenkins` > `Global Tool Configuration` > `Maven`
-
-#### Next Steps
-
-- [x] [Configure Users & Groups in Jenkins](https://youtu.be/jZOqcB32dYM)
-- [x] [Secure your Jenkins Server](https://youtu.be/19FmJumnkDc)
-- [x] [Jenkins Plugin Installation](https://youtu.be/p_PqPBbjaZ4)
-- [x] [Jenkins Master-Slave Configuration](https://youtu.be/hwrYURP4O2k)
