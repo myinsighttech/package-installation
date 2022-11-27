@@ -32,9 +32,10 @@ Setup M2_HOME and M2 paths in .bash_profile of user and add these to path variab
   - PATH=$PATH:$M2_HOME:$M2
 ```
 #### Check point 
-logoff and login to check maven version
+Refresh the bash profile, logoff & login and check maven version
 Check maven version 
 ```sh
   - source ~/.bashrc
+  - 
   - mvn –version
 ```
