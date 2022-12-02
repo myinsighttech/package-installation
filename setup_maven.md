@@ -15,7 +15,7 @@ Prerequisites:
 Download maven packages https://maven.apache.org/download.cgi onto Jenkins server. In this case I am using /opt/maven as my installation directory
 	- Link : https://maven.apache.org/download.cgi
   # Creating maven directory under /opt
-  - mkdir /opt/maven
+  - mkdir maven
   - cd /opt/maven
   # downloading & installing maven version 3.6.0
   - wget http://mirrors.fibergrid.in/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip
