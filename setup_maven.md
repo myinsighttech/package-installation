@@ -19,7 +19,7 @@ Download maven packages https://maven.apache.org/download.cgi onto Jenkins serve
   - cd /opt/maven
   # downloading & installing maven version 3.8.6
   - sudo wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip
-  - sudo unzip /opt/maven/apache-maven-3.8.6-bin.zip OR tar -xvzf apache-maven-3.8.6-bin.zip
+  - sudo unzip /opt/maven/apache-maven-3.8.6-bin.zip
   - sudo rm -rf apache-maven-3.8.6-bin.zip
   - sudo mv apache-maven-3.8.6/ maven
  ```
